@@ -6,7 +6,11 @@ together_api_key = st.secrets["TOGETHER_API_KEY"]
 
 # Initialize the Together client with the API key
 client = Together(api_key=together_api_key)
-
+# Set page config with title and favicon
+st.set_page_config(
+    page_title="AutoBuddy🚗⚙🛠",
+    page_icon="assets/AutoBuddy.png",
+)
 # Add custom CSS for styling
 st.markdown(
     """
